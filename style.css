@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "cabeca cabeca cabeca cabeca"
+        "esquer princi princi direit"
+        "rodape rodape rodape rodape";
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.grad_h{
+    grid-area: cabeca;
+}
+
+.grad_m{
+    grid-area: princi;
+}
+
+.grad_e{
+    grid-area: esquer;
+}
+
+.grad_d{
+    grid-area: direit;
+}
+
+.grad_f{
+    grid-area: rodape;
+}
