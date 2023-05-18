@@ -15,14 +15,17 @@ body{
 
 .grad_m{
     grid-area: princi;
+    text-align: justify;
 }
 
 .grad_e{
     grid-area: esquer;
+    width: 300px;
 }
 
 .grad_d{
     grid-area: direit;
+    width: 300px;
 }
 
 .grad_f{
