@@ -1,6 +1,5 @@
 body{
     display: grid;
-    grid-gap: 20px;
     grid-template-areas:
         "cabeca cabeca cabeca cabeca"
         "esquer princi princi direit"
@@ -16,19 +15,19 @@ body{
 
 .grad_m{
     grid-area: princi;
-    text-align: justify;
+    text-align: center;
     background-color: #6b9dbe;
 }
 
 .grad_e{
     grid-area: esquer;
-    width: 300px;
+    width: 450px;
     background-image: linear-gradient( to right, #215897, #6b9dbe);
 }
 
 .grad_d{
     grid-area: direit;
-    width: 300px;
+    width: 450px;
     background-image: linear-gradient( to right, #6b9dbe, #215897);
 }
 
@@ -36,6 +35,10 @@ body{
     grid-area: rodape;
 }
 
-h1, h2{
-    text-align: center;
+p, li, h3{
+    text-align: justify;
+}
+
+img{
+    width: 500px;
 }
