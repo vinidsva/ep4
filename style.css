@@ -11,6 +11,14 @@ body{
 
 .grad_h{
     grid-area: cabeca;
+    background-color:#215897 ;
+    text-align: center;
+
+}
+
+.logo{
+    width: 170px;
+    
 }
 
 .grad_m{
@@ -37,8 +45,18 @@ body{
 
 p, li, h3{
     text-align: justify;
+    
+}
+
+p{
+   font-style: italic;
 }
 
 img{
     width: 500px;
+}
+
+li{
+    color: black;
+    animation: alternate;
 }
