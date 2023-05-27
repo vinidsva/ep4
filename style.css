@@ -11,9 +11,8 @@ body{
 
 .grad_h{
     grid-area: cabeca;
-    background-color:#215897 ;
+    background-image: linear-gradient( to right, #215897, #6b9dbe, #6b9dbe, #215897);
     text-align: center;
-
 }
 
 .logo{
@@ -30,7 +29,7 @@ body{
 .grad_e{
     grid-area: esquer;
     width: 450px;
-    background-image: linear-gradient( to right, #215897, #6b9dbe);
+    background-image: linear-gradient( to right, #215897,#6b9dbe);
 }
 
 .grad_d{
@@ -41,22 +40,16 @@ body{
 
 .grad_f{
     grid-area: rodape;
+    background-image: linear-gradient( to right, #215897, #6b9dbe, #6b9dbe, #215897);
+    display: flex;
+    height: 100px;
 }
 
 p, li, h3{
-    text-align: justify;
-    
+    text-align: justify;   
 }
 
-p{
-   font-style: italic;
-}
-
-img{
+.foto{
     width: 500px;
-}
-
-li{
-    color: black;
-    animation: alternate;
+    border: solid #215897 10px;
 }
