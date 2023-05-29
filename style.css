@@ -24,6 +24,7 @@ body{
     grid-area: princi;
     text-align: center;
     background-color: #6b9dbe;
+    padding-bottom: 5%;
 }
 
 .grad_e{
@@ -43,6 +44,8 @@ body{
     background-image: linear-gradient( to right, #215897, #6b9dbe, #6b9dbe, #215897);
     display: flex;
     height: 100px;
+    text-align: center;
+    padding-left: 15%;
 }
 
 p, li, h3{
