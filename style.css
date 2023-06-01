@@ -1,58 +1,70 @@
+/* Corpo */
 body{
-    display: grid;
-    grid-template-areas:
+    display: grid; /*Trabalha com os elementos em formato de grade*/
+    grid-template-areas: /*Cria a grade da página*/
         "cabeca cabeca cabeca cabeca"
         "esquer princi princi direit"
         "rodape rodape rodape rodape";
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    line-height: 150%;
+    grid-template-columns: auto auto auto auto; /*Determina o tamanho para as colunas*/
+    grid-template-rows: auto auto auto auto; /*Define o tamanho e a disposição das linhas em um grid*/
+    line-height: 150%; /*Define a altura de linha de um elemento de texto*/
+    padding: 0; /*Define o preenchimento (espaço vazio)*/
+    margin: 0; /*Margem*/
+    font-family: Helvetica; /*Muda a fonte das letras*/
 }
 
-.grad_h{
-    grid-area: cabeca;
-    background-image: linear-gradient( to right, #215897, #6b9dbe, #6b9dbe, #215897);
-    text-align: center;
+/* Grid */
+.grad_h{ /*Header*/
+    grid-area: cabeca; /*Nome da Grid*/
+    background-color: white; /*Define a cor de fundo*/
+    text-align: center; /*Alinha os textos ao centro*/
+    padding: 10px; /*Define o preenchimento (espaço vazio)*/
 }
 
-.logo{
-    width: 170px;
-    
+.grad_m{ /*Main*/
+    grid-area: princi; /*Nome da Grid*/
+    text-align: center; /*Alinha os textos ao centro*/
+    background-color: #d6d6d6; /*Cor de fundo*/
+    padding-bottom: 5%; /*Define o preenchimento (espaço vazio) na parte inferior de um elemento*/
+    padding: 50px; /*Define o preenchimento (espaço vazio)*/
 }
 
-.grad_m{
-    grid-area: princi;
-    text-align: center;
-    background-color: #6b9dbe;
-    padding-bottom: 5%;
+.grad_e{ /*Aside Esquerda*/
+    grid-area: esquer; /*Nome da Grid*/
+    width: 50px; /*Redimensiona a largura*/
+    background-color: rgb(0, 68, 146); /*Define a cor de fundo*/
 }
 
-.grad_e{
-    grid-area: esquer;
-    width: 450px;
-    background-image: linear-gradient( to right, #215897,#6b9dbe);
+.grad_d{ /*Aside Direita*/
+    grid-area: direit; /*Nome da Grid*/
+    width: 50px; /*Redimensiona a largura*/
+    background-color: rgb(0, 68, 146); /*Define a cor de fundo*/
 }
 
-.grad_d{
-    grid-area: direit;
-    width: 450px;
-    background-image: linear-gradient( to right, #6b9dbe, #215897);
-}
-
-.grad_f{
-    grid-area: rodape;
-    background-image: linear-gradient( to right, #215897, #6b9dbe, #6b9dbe, #215897);
-    display: flex;
-    height: 100px;
-    text-align: center;
-    padding-left: 15%;
+.grad_f{ /*Footer*/
+    grid-area: rodape; /*Nome da Grid*/
+    background-color: rgb(202, 0, 0); /*Define a cor de fundo*/
+    display: flex; /*FlexBox*/
+    height: 100px; /*Muda o tamanho do Footer*/
+    text-align: center; /*Alinha os textos ao centro*/
+    padding-left: 15%; 
+    justify-content: center; /*Alinha e distribui itens flexíveis*/
+    align-items: center; /*Alinha os itens*/  
 }
 
 p, li, h3{
-    text-align: justify;   
+    text-align: justify; /*Justificar os textos*/   
 }
 
 .foto{
-    width: 500px;
-    border: solid #215897 10px;
+    width: 500px; /*Muda a largura da Imagem*/ 
+    border: solid #eca100 10px; /*Define o estilo da borda de um elemento como uma linha sólida*/
+}
+
+.logo{
+    width: 170px; /*Muda a largura da Logo*/  
+}
+
+#fontebranca{
+    color: white; /*Muda a cor da fonte para branco*/  
 }
